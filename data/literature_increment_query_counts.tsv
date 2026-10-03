@@ -1,0 +1,7 @@
+query	n_pubmed_records
+q1_tlr5_and_pa_tiab	118
+q2_tlr5_pa_expression	73
+q3_flagellin_tlr5_pa	66
+q4_pa_interactome_network	33
+q5_pa_interactome_bias	0
+q6_pa_interactome_cross_species	0

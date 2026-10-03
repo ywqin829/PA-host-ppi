@@ -1,0 +1,2 @@
+dataset	test	log2FC	SE	p	padj
+GSE201465	condition x disease_state interaction	0.337844271440322	0.196676578878106	0.0858393692370841	0.449848507448814

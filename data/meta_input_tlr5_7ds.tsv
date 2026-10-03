@@ -1,0 +1,8 @@
+study	species	tissue	tier	yi	sei
+SRP439193 (mouse lung)	mouse	lung	1	-2.265083	0.419582802583181
+SRP353174 (mouse lung)	mouse	lung	1	-1.114351	0.833806666054732
+GSE324794 (mouse lung SP-AKI)	mouse	lung	1	-0.904120175855901	0.160194072243878
+GSE192528 (human lung)	human	lung	1	-0.546291029944078	0.321938628374009
+GSE334176 (human cornea)	human	cornea	2	-2.08384697495979	0.595765451498826
+GSE287469 (M+PMN collapsed)	mouse	myeloid	2	-0.39264008144199	0.516777687534567
+GSE201465 (human airway organoids)	human	nasopharynx	1	-0.0161231681603097	0.0887731396420074
