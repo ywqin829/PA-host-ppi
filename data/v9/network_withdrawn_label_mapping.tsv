@@ -1,0 +1,4 @@
+withdrawn_label	replacement
+7 pan-pathogen hubs	7 represented proteins have non-PA degree >=6
+18 multi-pathogen targets	No reconstructable mutually exclusive class with this definition
+65 PA-exclusive targets	31 curated proteins are absent from this non-PA graph; absence is not biological PA exclusivity

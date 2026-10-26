@@ -1,0 +1,7 @@
+quantity	n	definition
+curated unique human proteins (all evidence)	92	Distinct human UniProt accessions in the 132 curated PA-human pairs.
+curated proteins represented by >=1 non-PA bacterial partner	61	Distinct curated human accessions with at least one non-PA cross-species interaction record.
+curated proteins with no non-PA partner in the graph	31	Absence from this particular non-PA graph; this is not evidence of PA-exclusive biology.
+represented proteins linked to 1-5 non-PA species	54	Distinct non-PA bacterial species degree between 1 and 5.
+represented proteins linked to >=6 non-PA species	7	High-recurrence set; not a biological pan-pathogen class.
+represented proteins in the top two preassigned degree deciles	28	Used for the Fisher enrichment analysis; not a mutually exclusive target class.

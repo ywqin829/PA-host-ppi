@@ -1,110 +1,162 @@
-# PA–Host PPI
+# PA–Host PPI / PA-HIR
 
-**A bias-aware host–pathogen interaction framework for _Pseudomonas aeruginosa_ infection**
+**A bias-audited Pseudomonas aeruginosa host-interaction resource for
+context-aware analysis of infection transcriptomes**
 
-铜绿假单胞菌（_Pseudomonas aeruginosa_, PA）–宿主蛋白互作与感染转录组整合分析项目。该仓库用于整理数据、运行统计分析、生成论文图表，并提出可证伪的宿主感染感知假说。
+This repository accompanies the PA-HIR manuscript. It contains the curated
+PA–human interaction set, cross-species network analyses, classifier-bias
+benchmarks, infection transcriptome reanalyses and the v9 evidence-correction
+outputs.
 
-> **Project status:** computational, hypothesis-generating, and under active preparation for submission. No protein-level or functional validation is included in the current release.
+> **Status:** v9 evidence-corrected release candidate. The analysis is
+> computationally reproducible from public inputs, but no protein-level or
+> functional validation is included.
 
-## Overview
+## Current version
 
-This project combines:
+The current manuscript is:
 
-- a curated PA–human protein–protein interaction (PPI) set;
-- a cross-species bacteria–human interactome for convergence analysis and transfer benchmarking;
-- bulk and single-cell infection transcriptomics across mouse and human models;
-- persistence and bacterial-state analyses;
-- drug–target annotation with direction-aware prioritization; and
-- reproducible figure and manuscript-generation workflows.
+- `docs/manuscript_v9_expert_review.md`
+- `docs/Cover_Letter_v9_expert_review.md`
+- `docs/Supplemental_Material_v9.pdf`
+- `docs/Supplementary_Tables_v9.xlsx`
 
-The central question is whether PA targets host nodes that are repeatedly used by different bacterial pathogens, and whether infection-response data can identify a directionally interpretable and experimentally testable host-sensing candidate.
+The earlier v6 manuscript is retained only in Git history.
 
-## Current results
+## Corrected v9 results
 
-The current manuscript version (`docs/manuscript_v6_submission.md`) reports:
+- **Curated interactome:** 132 PA–human protein pairs covering 35 PA proteins
+  and 92 human proteins.
+- **Cross-species resource:** 10,491 bacteria–human pairs from 102 bacterial
+  taxa.
+- **Network denominator:** 61 of the 92 curated human proteins occur in the
+  non-PA cross-species graph; 31 do not. Among the 61, 54 have 1–5 non-PA
+  species and 7 have at least six.
+- **Network enrichment:** top-two-degree-decile Fisher OR 3.47; after removing
+  the dominant curation source, OR 2.67 (p=0.263).
+- **Classifier bias:** ESM2 AUC is 0.777 against random negatives, 0.413
+  against top-300 promiscuous-hub negatives and 0.247 against degree ≥8
+  negatives. The decline is monotonic with negative-pool host degree
+  (Spearman rho=−0.976).
+- **TLR5 meta-analysis:** nine eligible datasets; REML log2FC −0.86
+  (95% CI −1.50 to −0.22), I²=96.1%, prediction interval −2.81 to 1.09.
+  Excluding both reanalysed SRP-linked datasets gives −0.57 (−1.20 to 0.06).
+- **GSE97036 repeated measures:** six donors × four arsenic levels ×
+  PA/control. TLR5 decreases in all 24 within-donor arsenic-level pairs.
+  The 24 pairs are repeated conditions; the six donors are the independent
+  biological units. The donor-level TLR5 effect is −1.224 (SE 0.147), which is
+  the conservative input used in the cross-study meta-analysis.
+- **TLR5/MUC1 context analysis:** transcripts encoding the previously linked
+  proteins do not form a fixed co-regulated module across acute primary
+  epithelium, persistent Calu-3 infection and iPSC-derived macrophages.
 
-- **Curated interactome:** 132 PA–human protein pairs covering 35 PA proteins and 92 human proteins.
-- **Cross-species resource:** 10,491 curated bacteria–human pairs spanning 102 bacterial taxa.
-- **Convergence:** PA targets are enriched among highly co-targeted host nodes after bias-aware null-model and robustness analyses (top-two deciles, odds ratio 3.5; direct-physical subset odds ratio 4.5).
-- **Protein-language-model benchmark:** ESM2 is used as a genome-wide candidate-coverage screen, not as proof of interaction specificity. Protein-disjoint cross-validation AUC is approximately 0.744 and PA transfer AUC is approximately 0.740; performance falls against hub-like hard negatives.
-- **TLR5 candidate:** a random-effects meta-analysis across six independent datasets gives a pooled TLR5 log2 fold-change of −1.18 (95% CI −1.81 to −0.54), with substantial heterogeneity (I² = 75.1%). The direction is reproducible across included acute-infection contexts but is not universal.
-- **Therapeutic interpretation:** TLR5 agonism/restoration, neutrophil-elastase inhibition, and IFN-γ supplementation are retained only as direction-aware, testable hypotheses. They are not validated treatments.
+These are transcript-level findings. They do not establish protein abundance,
+surface receptor availability or functional signalling.
 
-## Evidence boundary
-
-The project should be interpreted as a computational prioritization framework:
-
-1. TLR5 transcriptional attenuation is a candidate phenotype, not evidence of reduced surface receptor abundance or impaired signaling.
-2. The pooled effect is heterogeneous and context-dependent; the prediction interval crosses zero.
-3. The FliC experiments do not establish FliC independence.
-4. The single-cell analysis uses pooled samples and is descriptive rather than biological-replicate inference.
-5. ESM2 predictions provide candidate coverage and ranking; they do not establish physical binding.
-6. Drug directions require receptor-level, infection-model, toxicity, and efficacy validation.
-
-## Repository layout
+## v9 analysis files
 
 ```text
-data/
-├── raw/                  Downloaded source data (ignored by Git)
-├── processed/            Curated tables and analysis outputs (ignored by Git)
-└── sources.md            Data provenance, access status, and limitations
+data/v9/
+├── meta_primary_9datasets_input.tsv
+├── meta_primary_and_sensitivity_summary.tsv
+├── meta_primary_leave_one_out.tsv
+├── prr_panel_corrected_per_study.tsv
+├── prr_panel_corrected_meta.tsv
+├── network_count_audit.tsv
+├── network_target_degree_audit.tsv
+├── srp_reconstructed_tlr5_effects.tsv
+├── gse287469_tost_corrected_df12.tsv
+├── single_cell_tlr5_descriptive_summary.tsv
+├── gse97036_design_rank_check.tsv
+├── gse97036_mixed_model_average_effects.tsv
+├── gse97036_arsenic_interaction_lrt.tsv
+├── gse97036_six_donor_level_effects_all_panel_genes.tsv
+├── gse97036_six_donor_tlr5_minus_muc1.tsv
+├── gse97036_six_donor_correlations.tsv
+├── Table1_TLR5_multi_context_v9.tsv
+├── GSE97036_Sample_Gene_Count_Table.csv.gz
+├── GSE97036_series_matrix.txt.gz
+└── input/                         public source matrices and sample metadata
 
-scripts/                  R/Python data-processing and statistical-analysis scripts
-figure_reproduction/      Final figure scripts and figure input tables
-m8_robustness/            Leave-one-pathogen-out and robustness analyses
-docs/                     Manuscripts, analysis plans, audits, and data inventory
-submission_upload_v5/    Manuscript, figures, tables, and submission materials
-补充材料_Zenodo/           Release package for supplementary/raw-data archiving
-PLM-interact/             PPI model code used as a project dependency/reference
-PROJECT_STATE.md          Detailed project state and provenance log
-HANDOFF_CLAUDE.md         Extended handoff and reproducibility notes
+scripts/v9/
+├── 01_reconstruct_srp_effects.R
+├── 02_corrected_meta_analysis.R
+├── 03_network_count_audit.py
+├── 04_correct_tost.R
+├── 05_single_cell_descriptive.py
+├── 06_prr_panel_corrected.R
+├── 12_make_table1_v9.py
+├── 15_gse97036_repeated_measures.R
+├── 20_assemble_v9_figure_pdfs.py
+├── 21_build_supplement_v9.py
+├── 09_make_fig5_corrected_panels.R
+├── 10_make_fig4f_tost_corrected.R
+└── 11_make_fig6_state_summary.py
 ```
 
-Large raw and processed files are intentionally excluded from ordinary Git commits by `.gitignore`. See [`data/sources.md`](data/sources.md), [`docs/DATA_INVENTORY_FOR_REVIEW.md`](docs/DATA_INVENTORY_FOR_REVIEW.md), and the Zenodo release package for provenance and data-release details.
+## Key corrections relative to v8
+
+1. GSE262433 is included in the primary meta-analysis at its 120-hour endpoint;
+   exclusion of persistent infection and the 24-hour endpoint are sensitivity
+   analyses.
+2. GSE233206/SRP439193 is reanalysed from raw counts with 3 vs 3 samples.
+3. GSE192890/SRP353174 is reanalysed from deposited FPKM with 2 vs 2 samples.
+4. GSE97036 is modelled with donor and arsenic structure. The three-df
+   arsenic × infection test is reported, and donor means are used for
+   conservative biological inference.
+5. The unreconstructable 90-target and 7/18/65-class network statements are
+   replaced by traceable 92/61/31 and 7/54 degree counts.
+6. The single-cell cell-level OR and p-value are removed; the analysis is
+   descriptive because infection and library are confounded.
+7. TOST is recalculated with residual df=12.
+8. Egger regression is not used for inference with fewer than ten studies.
 
 ## Reproduction
 
-The analyses were developed on Windows with R 4.5.1 and Python 3.13. The main computational dependencies include `DESeq2`, `limma`, `metafor`, `pandas`, `numpy`, `scipy`, `statsmodels`, and `scanpy`.
+The v9 scripts use the compact source inputs in `data/v9/input/`. Public GEO and
+SRA accession numbers and original publications are cited in the manuscript.
 
-The final figures can be regenerated from the figure-reproduction package:
+Run from the repository root:
 
 ```powershell
-cd figure_reproduction/scripts
-Rscript run_all.R
+Rscript scripts/v9/01_reconstruct_srp_effects.R
+Rscript scripts/v9/15_gse97036_repeated_measures.R
+Rscript scripts/v9/02_corrected_meta_analysis.R
+python scripts/v9/03_network_count_audit.py
+Rscript scripts/v9/04_correct_tost.R
+python scripts/v9/05_single_cell_descriptive.py
+Rscript scripts/v9/06_prr_panel_corrected.R
+python scripts/v9/12_make_table1_v9.py
+Rscript scripts/v9/09_make_fig5_corrected_panels.R
+Rscript scripts/v9/10_make_fig4f_tost_corrected.R
+python scripts/v9/11_make_fig6_state_summary.py
+python scripts/v9/20_assemble_v9_figure_pdfs.py
 ```
 
-The editorial statistical analyses are organized as follows:
+Corrected composite figure PDFs and previews are in `figures/final/`.
 
-```text
-scripts/51_editorial_analyses.R    Donor-blocked DESeq2 and FliC analyses
-scripts/52_meta_collapse.R         Collapse MDSC effects to six datasets
-scripts/53_meta_reml.R              REML meta-analysis and sensitivity checks
-scripts/54_editorial_mcda.py       Therapeutic-priority uncertainty analysis
-scripts/56_editorial_network.py    Study-intensity-adjusted network models
-```
+The current input copies are public datasets. Required R packages include
+`DESeq2`, `glmmTMB`, `emmeans`, `GEOquery`, `lme4`, `limma`, `metafor`,
+`ggplot2`, `dplyr`, `patchwork`, `ggsignif` and `ggrepel`. Source datasets
+remain subject to their original repository terms.
 
-Most analysis scripts currently contain a local project-root path near the top of the file. Update that path before running on another machine. Reproduction also requires the corresponding raw inputs and processed tables; these are not bundled into a normal source checkout because of their size and redistribution constraints.
+## Release status
 
-## Data sources
-
-The project uses public resources including UniProt, IntAct, PHI-base, BioGRID, ChEMBL, GEO, and published supplementary tables. The source status and known limitations are documented in [`data/sources.md`](data/sources.md). In particular, HoPaCI-DB and HPIDB were not used as silently assumed complete sources when their current data could not be reliably retrieved.
-
-## Manuscript and release materials
-
-- Main computational manuscript: [`docs/manuscript_v6_submission.md`](docs/manuscript_v6_submission.md)
-- Data inventory: [`docs/DATA_INVENTORY_FOR_REVIEW.md`](docs/DATA_INVENTORY_FOR_REVIEW.md)
-- Reproducibility handoff: [`docs/HANDOFF_2026-08-18.md`](docs/HANDOFF_2026-08-18.md)
-- Supplementary-table index: [`docs/SUPPLEMENTARY_TABLES_INDEX.md`](docs/SUPPLEMENTARY_TABLES_INDEX.md)
-- Submission package: [`submission_upload_v5/README_SUBMISSION.md`](submission_upload_v5/README_SUBMISSION.md)
-
-## Citation
-
-The manuscript and citation metadata will be updated after authorship, target-journal, and archival-DOI details are finalized. Until then, please cite the repository URL and identify the manuscript version used.
+The repository now contains the v9 analysis inputs, outputs and scripts.
+The existing Zenodo record `10.5281/zenodo.22025912` is the prior v1.1
+release and is not represented here as a version-matched v9 archive. A new
+Zenodo version must be created from this release candidate before a manuscript
+cites it as the v9 data archive.
 
 ## License
 
-No top-level software or data license has been selected yet. Source datasets remain subject to their original licenses and terms of use. A project-level license should be added by the maintainer before broad redistribution.
+The Zenodo data release is licensed under CC BY 4.0. The software in this
+repository is released under the MIT License.
 
 ## Contact
 
-Open an issue for reproducibility questions, data-provenance corrections, or methodological discussion.
+Yongwei Qin
+
+Nantong University
+
+yw_qin@ntu.edu.cn

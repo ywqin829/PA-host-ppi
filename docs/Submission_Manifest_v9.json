@@ -1,0 +1,92 @@
+{
+  "version": "v9 evidence-corrected",
+  "prepared": "2026-10-26",
+  "journal": "Microbial Genomics",
+  "article_type": "Technical Resource",
+  "files": [
+    {
+      "path": "C:\\Users\\yw_qi\\Downloads\\pa-host-ppi\\revision_v9_evidence_corrected_2026-10-26\\upload_set_v9\\Manuscript_PA-HIR_v9.docx",
+      "sha256": "45ccf90673c5c8d8e8557ee954a782adbc6008cbb9c90a26b70be8b356cbd873",
+      "purpose": "Primary manuscript for journal upload"
+    },
+    {
+      "path": "C:\\Users\\yw_qi\\Downloads\\pa-host-ppi\\revision_v9_evidence_corrected_2026-10-26\\upload_set_v9\\Review_Package\\Manuscript_PA-HIR_v9.pdf",
+      "sha256": "7f5fa9e47c82d216101c58b7a3b17d77a8b69b3974daf391d8b8e682dd2c3ef1",
+      "purpose": "PDF review copy of the primary manuscript; not in the journal upload order"
+    },
+    {
+      "path": "C:\\Users\\yw_qi\\Downloads\\pa-host-ppi\\revision_v9_evidence_corrected_2026-10-26\\upload_set_v9\\Cover_Letter_PA-HIR_v9.docx",
+      "sha256": "343a6d4e0d1ba5e0b2f4c9f1311b90fa43646b5ac0d3494a207721e737175519",
+      "purpose": "Cover letter for journal upload"
+    },
+    {
+      "path": "C:\\Users\\yw_qi\\Downloads\\pa-host-ppi\\revision_v9_evidence_corrected_2026-10-26\\upload_set_v9\\Review_Package\\Cover_Letter_PA-HIR_v9.pdf",
+      "sha256": "e2768720badd0502551cbc0fa013826fba427b70c06396a1e3442eae3a0e4901",
+      "purpose": "PDF review copy of the cover letter; not in the journal upload order"
+    },
+    {
+      "path": "C:\\Users\\yw_qi\\Downloads\\pa-host-ppi\\revision_v9_evidence_corrected_2026-10-26\\upload_set_v9\\Figures\\Fig1.pdf",
+      "sha256": "5cb74c95f5adef538b99b741b9399b574cdaf205c45f982cfb5fbb17a4d70482",
+      "purpose": "Final manuscript figure 1"
+    },
+    {
+      "path": "C:\\Users\\yw_qi\\Downloads\\pa-host-ppi\\revision_v9_evidence_corrected_2026-10-26\\upload_set_v9\\Figures\\Fig2.pdf",
+      "sha256": "0c103c38722f447be70c69b08063424a918e716ee804f92bd42e066d3ba14750",
+      "purpose": "Final manuscript figure 2"
+    },
+    {
+      "path": "C:\\Users\\yw_qi\\Downloads\\pa-host-ppi\\revision_v9_evidence_corrected_2026-10-26\\upload_set_v9\\Figures\\Fig3.pdf",
+      "sha256": "f10c8c1e28eff99c6caa4936d924ec6c43ccd1d7a68fc3e640f25909b73e0745",
+      "purpose": "Final manuscript figure 3"
+    },
+    {
+      "path": "C:\\Users\\yw_qi\\Downloads\\pa-host-ppi\\revision_v9_evidence_corrected_2026-10-26\\upload_set_v9\\Figures\\Fig4.pdf",
+      "sha256": "40315afc7559c5cd5f665ae830a3aeb46310fceb80b7a48743ed89e15ce7712e",
+      "purpose": "Final manuscript figure 4"
+    },
+    {
+      "path": "C:\\Users\\yw_qi\\Downloads\\pa-host-ppi\\revision_v9_evidence_corrected_2026-10-26\\upload_set_v9\\Figures\\Fig5.pdf",
+      "sha256": "ddd29ec0f9b6fc01043fba9d1b2b82fea6a2d713fe9a88108d2c5a569143a136",
+      "purpose": "Final manuscript figure 5"
+    },
+    {
+      "path": "C:\\Users\\yw_qi\\Downloads\\pa-host-ppi\\revision_v9_evidence_corrected_2026-10-26\\upload_set_v9\\Figures\\Fig6.pdf",
+      "sha256": "d58331c5bff70af451ae309111b13959bf3b7bf31d93aeef8c572fbba78b33ac",
+      "purpose": "Final manuscript figure 6"
+    },
+    {
+      "path": "C:\\Users\\yw_qi\\Downloads\\pa-host-ppi\\revision_v9_evidence_corrected_2026-10-26\\upload_set_v9\\Supplementary_Tables_v9.xlsx",
+      "sha256": "aa479b081c1c08c1ce9902bdc7af1c6bcbbbedf09d051803514cbc2ad2b3e351",
+      "purpose": "Machine-readable supplementary tables"
+    },
+    {
+      "path": "C:\\Users\\yw_qi\\Downloads\\pa-host-ppi\\revision_v9_evidence_corrected_2026-10-26\\upload_set_v9\\Supplemental_Material_v9.pdf",
+      "sha256": "eec5092ef3e98aa8ef2e1926424b41b279ef9105f603de3118cbb1b3f75f76f1",
+      "purpose": "Human-readable supplementary material"
+    },
+    {
+      "path": "C:\\Users\\yw_qi\\Downloads\\pa-host-ppi\\revision_v9_evidence_corrected_2026-10-26\\upload_set_v9\\Review_Package\\PA-HIR_v9_Complete_Review_Package.pdf",
+      "sha256": "433a28e9273324d8dcc5aee32a8f53ba516a5561154255017c105775540d04f6",
+      "purpose": "Single-file review convenience package; not the journal upload order"
+    }
+  ],
+  "upload_order": [
+    "Cover_Letter_PA-HIR_v9.docx",
+    "Manuscript_PA-HIR_v9.docx",
+    "Figures/Fig1.pdf",
+    "Figures/Fig2.pdf",
+    "Figures/Fig3.pdf",
+    "Figures/Fig4.pdf",
+    "Figures/Fig5.pdf",
+    "Figures/Fig6.pdf",
+    "Supplementary_Tables_v9.xlsx",
+    "Supplemental_Material_v9.pdf"
+  ],
+  "excluded": [
+    "prior versions",
+    "working notes",
+    "temporary files",
+    "legacy v8 outputs",
+    "Zenodo v1.1 DOI"
+  ]
+}

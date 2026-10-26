@@ -1,0 +1,10 @@
+study	species	tissue	tier	design	yi	sei
+GSE233206 / SRP439193	mouse	lung	1	3 vs 3; raw-count DESeq2	-2.41322723951634	0.224626996142108
+GSE192890 / SRP353174	mouse	lung	1	2 vs 2; deposited-FPKM limma	-1.15052131793543	0.209720691705356
+GSE324794 (mouse lung SP-AKI)	mouse	lung	1	published count-model effect	-0.904120175855901	0.160194072243878
+GSE192528 (human lung)	human	lung	1	published count-model effect	-0.546291029944078	0.321938628374009
+GSE334176 (human cornea)	human	cornea	2	published count-model effect	-2.08384697495979	0.595765451498826
+GSE287469 (M+PMN collapsed)	mouse	myeloid	2	published count-model effect	-0.39264008144199	0.516777687534567
+GSE201465 (human airway organoids)	human	nasopharynx	1	published count-model effect	-0.0161231681603097	0.0887731396420074
+GSE97036 primary HBE	human	airway	1	6 donors x 4 arsenic levels; six donor-level means	-1.22400953399168	0.146852691869368
+GSE262433 persistent Calu-3, 120 h	human	airway	2	3 vs 3; DESeq2 at persistent endpoint	0.73256528737346	0.187555910899443

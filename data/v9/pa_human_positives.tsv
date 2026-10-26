@@ -1,0 +1,133 @@
+pa_protein_id	pa_gene	human_uniprot	human_gene	source	evidence_type
+A0A072ZMS6	pumA	P58753	TIRAP	frontiers_2025	Binding
+A0A072ZMS6	pumA	Q99836	MYD88	frontiers_2025	Binding
+E9KTN4	pilY1	P05556	ITGB1	frontiers_2025	Binding
+G3XD11	oprH	P01024	C3	frontiers_2025	Binding
+G3XDA1	exoS	O00622	CCN1	frontiers_2025	Cell modulation
+G3XDA1	exoS	O14807	MRAS	frontiers_2025	Inibition
+G3XDA1	exoS;EXOS	P08670	VIM	frontiers_2025;literature	Inibition;literature_binding_degradation
+G3XDA1	exoS;EXOS	P15311	EZR	frontiers_2025;literature	Inibition;Degradation;literature_binding_degradation
+G3XDA1	exoS;EXOS	P20936	RASA1	frontiers_2025;literature	Inibition;literature_gap_activity
+G3XDA1	exoS;EXOS	P26038	MSN	frontiers_2025;literature	Inibition;literature_binding_degradation
+G3XDA1	exoS;EXOS	P27348	YWHAQ;ENSP00000371267.4	frontiers_2025;intact;literature	Inibition;psi-mi:"MI:0045"(experimental interaction detection);literature_direct_binding
+G3XDA1	exoS;EXOS	P27361	MAPK3	frontiers_2025;literature	Cell modulation;literature_modulation
+G3XDA1	exoS;EXOS	P28482	MAPK1	frontiers_2025;literature	Cell modulation;literature_modulation
+G3XDA1	exoS	P29279	CCN2	frontiers_2025	Cell modulation
+G3XDA1	exoS;EXOS	P31946	YWHAB;ENSP00000361930.3	frontiers_2025;intact;literature	Inibition;Binding;psi-mi:"MI:0045"(experimental interaction detection);literature_direct_binding
+G3XDA1	exoS;EXOS	P31947	SFN;ENSP00000340989.4	frontiers_2025;intact;literature	Inibition;psi-mi:"MI:0045"(experimental interaction detection);literature_direct_binding
+G3XDA1	exoS;EXOS	P35241	RDX	frontiers_2025;literature	Inibition;literature_binding_degradation
+G3XDA1	exoS;EXOS	P52198	RND2	frontiers_2025;literature	Inibition;literature_gap_activity
+G3XDA1	exoS;EXOS	P60709	ACTB	frontiers_2025;literature	Degradation;Binding;literature_binding
+G3XDA1	exoS;EXOS	P60953	CDC42	frontiers_2025;literature	Inibition;literature_gap_activity
+G3XDA1	exoS;EXOS	P61587	RND3	frontiers_2025;literature	Inibition;literature_gap_activity
+G3XDA1	exoS;EXOS	P61981	YWHAG;ENSP00000306330.3	frontiers_2025;intact;literature	Inibition;psi-mi:"MI:0045"(experimental interaction detection);literature_direct_binding
+G3XDA1	exoS;EXOS	P62258	YWHAE;ENSP00000487356.1	frontiers_2025;intact;literature	Inibition;psi-mi:"MI:0045"(experimental interaction detection);literature_direct_binding
+G3XDA1	exoS;EXOS	P63000	RAC1;ENSP00000258737.7	frontiers_2025;intact;literature	Inibition;psi-mi:"MI:0114"(x-ray crystallography);literature_gap_activity
+G3XDA1	exoS;EXOS	P63104	YWHAZ;ENSP00000398599.1	frontiers_2025;intact;literature	Inibition;psi-mi:"MI:0045"(experimental interaction detection);literature_direct_binding
+G3XDA1	exoS;EXOS	Q04917	YWHAH;EBI-21351354	frontiers_2025;intact;literature	Inibition;psi-mi:"MI:0045"(experimental interaction detection);literature_direct_binding
+G3XDA1	exoS;EXOS	Q07157	TJP1	frontiers_2025;literature	Degradation;literature_degradation
+G3XDA1	exoS;EXOS	Q14790	CASP8	frontiers_2025;literature	Cell modulation;literature_modulation
+G3XDA1	exoS;EXOS	Q15276	RABEP1	frontiers_2025;literature	Inibition;literature_binding
+G3XDA1	exoS;EXOS	Q15311	RALBP1	frontiers_2025;literature	Inibition;literature_binding
+G3XDA1	exoS;EXOS	Q16539	MAPK14	frontiers_2025;literature	Cell modulation;literature_modulation
+G3XDA1	exoS;EXOS	Q16625	OCLN	frontiers_2025;literature	Degradation;literature_degradation
+G3XDA1	exoS;EXOS	Q8NEB9	PIK3C3	frontiers_2025;literature	Degradation;literature_adprt_activity
+G3XDA1	exoS;EXOS	Q92730	RND1	frontiers_2025;literature	Inibition;literature_gap_activity
+G3XDA2	exoS	Q9Y5S8	NOX1	frontiers_2025	Degradation
+O24779	oprQ	P02751	FN1	frontiers_2025	Binding
+O33407	estA	O15230	LAMA5	frontiers_2025	Binding
+O33407	estA	Q16363	LAMA4	frontiers_2025	Binding
+O34208	exoU;EXOU	O00622	CCN1	frontiers_2025;literature	Cell modulation;literature_modulation
+O34208	exoU	P00441	SOD1	frontiers_2025	Activation B-A
+O34208	exoU	P01100	FOS	frontiers_2025	Cell modulation
+O34208	exoU	P05412	JUN	frontiers_2025	Cell modulation
+O34208	exoU	P0CG47	UBB	frontiers_2025	Activation B-A
+O34208	exoU;EXOU	P28482	MAPK1	frontiers_2025;literature	Cell modulation;literature_modulation
+O34208	exoU;EXOU	P29279	CCN2	frontiers_2025;literature	Cell modulation;literature_modulation
+O34208	exoU	Q8N4L2	PIP4P2	frontiers_2025	Activation B-A
+O34208	exoU;EXOU	Q9H3Z4	DNAJC5	frontiers_2025;literature	Activation B-A;literature_cofactor_binding
+P00282	azu;AZU	P04075	ALDOA	frontiers_2025;literature	Cell modulation;literature_binding
+P00282	azu;AZU	P04637	TP53	frontiers_2025;literature	Activation;literature_activation
+P04739	PILA	P05556	ITGB1	literature	literature_binding
+P04739	pilA;PILA	P10914	IRF1	frontiers_2025;literature	Binding;literature_binding
+P09591	tuf	P00747	PLG	frontiers_2025	Binding
+P09591	tuf	P08603	CFH	frontiers_2025	Binding
+P09591	tuf	Q03591	FHR-1	frontiers_2025	Binding
+P11439	eta;ETA	O14672	ADAM10	frontiers_2025;literature	Activation;literature_modulation
+P11439	eta;ETA	P13639	EF2;EEF2	frontiers_2025;literature	Inibition;literature_adprt_target
+P11439	eta	P59665	DEF1	frontiers_2025	Inactivation B-A
+P11439	eta;ETA	Q07954	LRP1	frontiers_2025;literature	Binding;literature_receptor_binding
+P13794	oprF;OPRF	P01024	C3	frontiers_2025;literature	Binding;literature_binding
+P13794	oprF;OPRF	P01579	IFNG	frontiers_2025;literature	Binding;literature_binding
+P14756	lasB	P00734	F2	frontiers_2025	Degradation
+P14756	lasB;LASB	P01009	SERPINA1	frontiers_2025;literature	Degradation;literature_inhibition
+P14756	lasB;LASB	P01024	C3	frontiers_2025;literature	Degradation;literature_degradation
+P14756	lasB;LASB	P01031	C5	frontiers_2025;literature	Degradation;literature_degradation
+P14756	lasB;LASB	P01579	IFNG	frontiers_2025;literature	Degradation;literature_degradation
+P14756	lasB	P02452	COL1A1	frontiers_2025	Degradation
+P14756	lasB	P02746	C1q	frontiers_2025	Degradation
+P14756	lasB;LASB	P02751	FN1	frontiers_2025;literature	Degradation;literature_degradation
+P14756	lasB;LASB	P04004	VTN	frontiers_2025;literature	Degradation;literature_degradation
+P14756	lasB	P04275	vWF	frontiers_2025	Degradation
+P14756	lasB	P33151	CDH5	frontiers_2025	Degradation
+P14756	lasB	P60568	IL-2	frontiers_2025	Degradation
+P14756	lasB;LASB	Q03405	PLAUR	frontiers_2025;literature	Degradation;literature_degradation
+P14756	lasB;LASB	Q16625	OCLN	frontiers_2025;literature	Degradation;literature_degradation
+P32722	oprD	O15230	LAMA5	frontiers_2025	Binding
+P32722	oprD	P04004	VTN	frontiers_2025	Binding
+P32722	oprD	Q16363	LAMA4	frontiers_2025	Binding
+P33883	lasI	P49137	MAPKAPK2	frontiers_2025	Cell modulation
+P72151	FLIC	O60602	TLR5	literature	literature_receptor_binding
+P72151	FLIC	P01135	TGFA	literature	literature_modulation
+P72151	FLIC	P15941	MUC1	literature	literature_binding
+P72151	FLIC	Q9NPP4	NLRC4	literature	literature_receptor_activation
+Q03023	aprA	O60602	TLR5	frontiers_2025	Inibition
+Q03023	aprA;APRA	P01024	C3	frontiers_2025;literature	Degradation;literature_degradation
+Q03023	aprA;APRA	P01031	C5	frontiers_2025;literature	Degradation;literature_degradation
+Q03023	aprA;APRA	P01579	IFNG	frontiers_2025;literature	Degradation;literature_degradation
+Q03023	aprA	P02745	C1q	frontiers_2025	Degradation
+Q03023	aprA	P06681	C2	frontiers_2025	Degradation
+Q03023	aprA	P0C0L4	C4	frontiers_2025	Degradation
+Q05097	lecA;LECA	P13987	CD59	frontiers_2025;literature	Binding;literature_binding
+Q05097	lecA;LECA	Q9NPC4	A4GALT	frontiers_2025;literature	Binding;literature_binding
+Q51372	algX	P08246	ELANE	frontiers_2025	Inibition
+Q9HUS5	NA	P05231	NA	phi_base	curated_phi_base
+Q9HUS5	NA	P10145	NA	phi_base	curated_phi_base
+Q9HWK6	prpL	P00747	PLG	frontiers_2025	Degradation
+Q9HWK6	prpL	P01024	C3	frontiers_2025	Degradation
+Q9HWK6	prpL	P01857	IGHG1	frontiers_2025	Degradation
+Q9HWK6	prpL	P02745	C1q	frontiers_2025	Degradation
+Q9HWK6	prpL	P02787	TF	frontiers_2025	Degradation
+Q9HWK6	prpL	P02788	LTF	frontiers_2025	Degradation
+Q9HWW1	oprG	O15230	LAMA5	frontiers_2025	Binding
+Q9HWW1	oprG	Q16363	LAMA4	frontiers_2025	Binding
+Q9HX90	PA3923	O15230	LAMA5	frontiers_2025	Binding
+Q9HX90	PA3923	Q16363	LAMA4	frontiers_2025	Binding
+Q9I088	eco	P48740	MASP1	frontiers_2025	Inibition
+Q9I089	eco	O00187	MASP2	frontiers_2025	Inibition
+Q9I174	Paf	O15230	LAMA5	frontiers_2025	Binding
+Q9I174	Paf	Q16363	LAMA4	frontiers_2025	Binding
+Q9I1H0	ambB	P42574	CASP3	frontiers_2025	Cell modulation
+Q9I1H0	ambB	Q9NUX5	POT1	frontiers_2025	Inibition;Cell modulation
+Q9I1H3	ambE	P42574	CASP3	frontiers_2025	Cell modulation
+Q9I1H3	ambE	Q9NUX5	POT1	frontiers_2025	Inibition;Cell modulation
+Q9I1S4	exoY;EXOY	P60709	ACTB	frontiers_2025;literature	Activation B-A;literature_binding
+Q9I1W9	NA	P05231	NA	phi_base	curated_phi_base
+Q9I3D1	lpd3	P00747	PLG	frontiers_2025	Binding
+Q9I3D1	lpd3	P08603	CFH	frontiers_2025	Binding
+Q9I3D1	lpd3	Q03591	FHR-1	frontiers_2025	Binding
+Q9I534	dinB	P49913	CAMP	frontiers_2025	Inactivation B-A
+Q9I5W4	impA	P16150	SPN	frontiers_2025	Degradation
+Q9I5W4	impA	Q14242	SELPLG	frontiers_2025	Degradation
+Q9I788	exoT	P31946	YWHAB	frontiers_2025	Activation B-A
+Q9I788	EXOT	P46108	CRK	literature	literature_adprt_activity
+Q9I788	exoT;EXOT	P46109	CRKL	frontiers_2025;literature	Inibition;literature_adprt_activity
+Q9I788	exoT	P52198	RND2	frontiers_2025	Inibition
+Q9I788	exoT	P60709	ACTB	frontiers_2025	Degradation
+Q9I788	exoT;EXOT	P60953	CDC42	frontiers_2025;literature	Activation;Inibition;literature_gap_activity
+Q9I788	exoT	P61586	RHOA	frontiers_2025	Activation
+Q9I788	exoT	P61587	RND3	frontiers_2025	Inibition
+Q9I788	exoT;EXOT	P63000	RAC1	frontiers_2025;literature	Activation;Inibition;literature_gap_activity
+Q9I788	EXOT	P63104	YWHAZ	literature	literature_direct_binding
+Q9I788	exoT	Q13191	CBLB	frontiers_2025	Degradation B-A
+Q9I788	exoT	Q92730	RND1	frontiers_2025	Inibition

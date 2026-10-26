@@ -1,0 +1,5 @@
+celltype	genotype	n_cells_sham	n_cells_PA	mean_lognorm_sham	mean_lognorm_PA	detected_percent_sham	detected_percent_PA
+AlvMac	WT	5724	158	0.0819	0.0162	0.131	0.038
+AlvMac	DKO	4863	517	0.0832	0.0493	0.131	0.095
+cDC	WT	660	132	0.088	0.0032	0.12	0.008
+cDC	DKO	890	99	0.0586	0.0065	0.088	0.01
