@@ -1,11 +1,11 @@
-study	species	tissue_or_model	design	log2FC	SE	p_value_if_available	included_in_primary_meta
-GSE233206 / SRP439193	mouse	lung	3 vs 3; raw-count DESeq2	-2.41322723951634	0.224626996142108	6.37495309776438e-27	True
-GSE192890 / SRP353174	mouse	lung	2 vs 2; deposited-FPKM limma	-1.15052131793543	0.209720691705356	0.0094461672821584	True
-GSE324794 (mouse lung SP-AKI)	mouse	lung	published count-model effect	-0.904120175855901	0.160194072243878	0.000903	True
-GSE192528 (human lung)	human	lung	published count-model effect	-0.546291029944078	0.321938628374009	0.091055	True
-GSE334176 (human cornea)	human	cornea	published count-model effect	-2.08384697495979	0.595765451498826	0.000469	True
-GSE287469 (M+PMN collapsed)	mouse	myeloid	published count-model effect	-0.39264008144199	0.516777687534567	0.4473829414694158	True
-GSE201465 (human airway organoids)	human	nasopharynx	published count-model effect	-0.0161231681603097	0.0887731396420074	0.855879	True
-GSE97036 primary HBE	human	airway	6 donors x 4 arsenic levels; six donor-level means	-1.22400953399168	0.146852691869368	0.000406479689202	True
-GSE262433 persistent Calu-3, 120 h	human	airway	3 vs 3; DESeq2 at persistent endpoint	0.73256528737346	0.187555910899443	9.389468e-05	True
-GSE276816 iPSC macrophages, WT 450 min	human	iPSC-derived macrophages	single donor per genotype; descriptive	-3.03562353134691	1.66750226127087	0.116827168946172	False
+study	species	tissue_or_model	tier	design	log2FC	SE	p_value_if_available	included_in_primary_meta
+GSE233206 / SRP439193	mouse	lung	1	3 vs 3; raw-count DESeq2	-2.41322723951634	0.224626996142108	6.37495309776438e-27	True
+GSE192890 / SRP353174	mouse	lung	1	2 vs 2; deposited-FPKM limma	-1.15052131793543	0.209720691705356	0.0094461672821584	True
+GSE324794 (mouse lung SP-AKI)	mouse	lung	1	published count-model effect	-0.904120175855901	0.160194072243878	0.000903	True
+GSE192528 (human lung)	human	lung	1	published count-model effect	-0.546291029944078	0.321938628374009	0.091055	True
+GSE334176 (human cornea)	human	cornea	2	published count-model effect	-2.08384697495979	0.595765451498826	0.000469	True
+GSE287469 (M+PMN collapsed)	mouse	myeloid	2	published count-model effect	-0.39264008144199	0.516777687534567	0.4473829414694158	True
+GSE201465 (human airway organoids)	human	nasopharynx	1	published count-model effect	-0.0161231681603097	0.0887731396420074	0.855879	True
+GSE97036 primary HBE	human	airway	1	6 donors x 4 arsenic levels; six-donor normalized-count log2FC	-1.22400953399168	0.146852691869368	0.000406479689202	True
+GSE262433 persistent Calu-3, 120 h	human	airway	2	3 vs 3; DESeq2 at persistent endpoint	0.73256528737346	0.187555910899443	9.389468e-05	True
+GSE276816 iPSC macrophages, WT 450 min	human	iPSC-derived macrophages	3	single donor per genotype; descriptive	-3.03562353134691	1.66750226127087	0.116827168946172	False

@@ -68,6 +68,7 @@ for _, row in meta.iterrows():
             "study": study,
             "species": row["species"],
             "tissue_or_model": row["tissue"],
+            "tier": int(row["tier"]),
             "design": row["design"],
             "log2FC": row["yi"],
             "SE": row["sei"],
@@ -79,7 +80,7 @@ for _, row in meta.iterrows():
 for row_index, row in enumerate(rows):
     if row["study"] == "GSE97036 primary HBE":
         rows[row_index]["design"] = (
-            "6 donors x 4 arsenic levels; six donor-level means"
+            "6 donors x 4 arsenic levels; six-donor normalized-count log2FC"
         )
 
 rows.extend(
@@ -88,6 +89,7 @@ rows.extend(
             "study": "GSE276816 iPSC macrophages, WT 450 min",
             "species": "human",
             "tissue_or_model": "iPSC-derived macrophages",
+            "tier": 3,
             "design": "single donor per genotype; descriptive",
             "log2FC": ipsc["log2FC.TLR5"],
             "SE": ipsc["SE.TLR5"],

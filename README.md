@@ -70,6 +70,7 @@ data/v9/
 ├── single_cell_tlr5_descriptive_summary.tsv
 ├── gse97036_design_rank_check.tsv
 ├── gse97036_mixed_model_average_effects.tsv
+├── gse97036_fixed_donor_average_effects.tsv
 ├── gse97036_arsenic_interaction_lrt.tsv
 ├── gse97036_six_donor_level_effects_all_panel_genes.tsv
 ├── gse97036_six_donor_tlr5_minus_muc1.tsv
