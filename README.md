@@ -3,6 +3,9 @@
 **A bias-audited Pseudomonas aeruginosa host-interaction resource for
 context-aware analysis of infection transcriptomes**
 
+**Current release:** v9 evidence-corrected (2026-10-26). The active analysis
+inputs and scripts are under `data/v9/` and `scripts/v9/`.
+
 This repository accompanies the PA-HIR manuscript. It contains the curated
 PA–human interaction set, cross-species network analyses, classifier-bias
 benchmarks, infection transcriptome reanalyses and the v9 evidence-correction
