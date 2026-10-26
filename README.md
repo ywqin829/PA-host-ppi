@@ -89,7 +89,6 @@ scripts/v9/
 ├── 12_make_table1_v9.py
 ├── 15_gse97036_repeated_measures.R
 ├── 20_assemble_v9_figure_pdfs.py
-├── 21_build_supplement_v9.py
 ├── 09_make_fig5_corrected_panels.R
 ├── 10_make_fig4f_tost_corrected.R
 └── 11_make_fig6_state_summary.py
