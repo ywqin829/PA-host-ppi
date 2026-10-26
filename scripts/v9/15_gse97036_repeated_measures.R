@@ -40,13 +40,25 @@ dds_size <- DESeqDataSetFromMatrix(
 dds_size <- estimateSizeFactors(dds_size)
 size_factors <- sizeFactors(dds_size)
 
-design_formula <- ~ donor + arsenic + condition + arsenic:condition
-model_matrix <- model.matrix(design_formula, data = metadata)
-rank_check <- data.frame(
-  n_samples = nrow(model_matrix),
-  n_coefficients = ncol(model_matrix),
-  rank = qr(model_matrix)$rank,
-  full_rank = qr(model_matrix)$rank == ncol(model_matrix)
+random_fixed_matrix <- model.matrix(~ condition * arsenic, data = metadata)
+fixed_donor_matrix <- model.matrix(~ donor + condition * arsenic, data = metadata)
+rank_check <- rbind(
+  data.frame(
+    model = "random-intercept GLMM fixed effects",
+    formula = "~ condition * arsenic",
+    n_samples = nrow(random_fixed_matrix),
+    n_coefficients = ncol(random_fixed_matrix),
+    rank = qr(random_fixed_matrix)$rank,
+    full_rank = qr(random_fixed_matrix)$rank == ncol(random_fixed_matrix)
+  ),
+  data.frame(
+    model = "fixed-donor negative-binomial sensitivity model",
+    formula = "~ donor + condition * arsenic",
+    n_samples = nrow(fixed_donor_matrix),
+    n_coefficients = ncol(fixed_donor_matrix),
+    rank = qr(fixed_donor_matrix)$rank,
+    full_rank = qr(fixed_donor_matrix)$rank == ncol(fixed_donor_matrix)
+  )
 )
 
 genes <- c("TLR5", "MUC1", "NFKB1", "NFKB2", "RELA", "IL6", "CXCL8")
@@ -65,17 +77,18 @@ extract_average_contrast <- function(model, gene) {
   summary_result <- as.data.frame(summary(contrast_result, infer = c(TRUE, TRUE)))
   data.frame(
     gene = gene,
-    log2FC = summary_result$estimate,
-    SE = summary_result$SE,
+    log2FC = summary_result$estimate / log(2),
+    SE = summary_result$SE / log(2),
     statistic = summary_result$z.ratio,
     p_value = summary_result$p.value,
-    ci_low = summary_result$asymp.LCL,
-    ci_high = summary_result$asymp.UCL,
+    ci_low = summary_result$asymp.LCL / log(2),
+    ci_high = summary_result$asymp.UCL / log(2),
     stringsAsFactors = FALSE
   )
 }
 
 mixed_results <- list()
+fixed_results <- list()
 interaction_results <- list()
 donor_results <- list()
 donor_deltas_all <- list()
@@ -99,6 +112,14 @@ for (gene in genes) {
 
   contrast_result <- extract_average_contrast(full_model, gene)
   mixed_results[[gene]] <- contrast_result
+
+  fixed_model <- glmmTMB(
+    count ~ donor + condition * arsenic +
+      offset(log_size_factor),
+    data = model_data,
+    family = nbinom2
+  )
+  fixed_results[[gene]] <- extract_average_contrast(fixed_model, gene)
 
   lrt <- anova(reduced_model, full_model)
   interaction_results[[gene]] <- data.frame(
@@ -145,6 +166,7 @@ for (gene in genes) {
 }
 
 mixed_result <- do.call(rbind, mixed_results)
+fixed_result <- do.call(rbind, fixed_results)
 interaction_result <- do.call(rbind, interaction_results)
 donor_result <- do.call(rbind, donor_results)
 paired_deltas <- do.call(rbind, donor_deltas_all)
@@ -276,6 +298,14 @@ write.table(
   na = "NA"
 )
 write.table(
+  fixed_result,
+  file.path(out_dir, "gse97036_fixed_donor_average_effects.tsv"),
+  sep = "\t",
+  quote = FALSE,
+  row.names = FALSE,
+  na = "NA"
+)
+write.table(
   interaction_result,
   file.path(out_dir, "gse97036_arsenic_interaction_lrt.tsv"),
   sep = "\t",
@@ -320,6 +350,8 @@ cat("Design rank check:\n")
 print(rank_check)
 cat("\nMixed-model average infection effects:\n")
 print(mixed_result, row.names = FALSE)
+cat("\nFixed-donor-model average infection effects:\n")
+print(fixed_result, row.names = FALSE)
 cat("\nArsenic x infection LRT:\n")
 print(interaction_result, row.names = FALSE)
 cat("\nConservative six-donor inference:\n")
