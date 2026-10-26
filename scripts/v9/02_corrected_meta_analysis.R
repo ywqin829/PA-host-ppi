@@ -10,7 +10,7 @@ out_dir <- file.path(data_dir, "reproduced")
 dir.create(out_dir, recursive = TRUE, showWarnings = FALSE)
 
 original <- read.delim(
-  file.path(data_dir, "meta_input_tlr5_7ds_v8.tsv"),
+  file.path(data_dir, "meta_input_tlr5_base7datasets.tsv"),
   check.names = FALSE
 )
 reconstructed <- read.delim(
