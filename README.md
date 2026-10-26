@@ -146,11 +146,12 @@ remain subject to their original repository terms.
 
 ## Release status
 
-The repository now contains the v9 analysis inputs, outputs and scripts.
-The existing Zenodo record `10.5281/zenodo.22025912` is the prior v1.1
-release and is not represented here as a version-matched v9 archive. A new
-Zenodo version must be created from this release candidate before a manuscript
-cites it as the v9 data archive.
+The repository contains the v9 analysis inputs, outputs and scripts.
+The version-matched Zenodo archive is `10.5281/zenodo.23667995`:
+https://doi.org/10.5281/zenodo.23667995
+
+The older record `10.5281/zenodo.22025912` remains the historical v1.1
+release.
 
 ## License
 
