@@ -20,7 +20,7 @@ We demonstrate the resource with TLR5 and its previously described protein-level
 
 The contribution is intended for researchers who integrate microbial interaction data, infection transcriptomes and host-directed hypotheses. The resource is distributed with versioned data tables, analysis code and a structured release directory. It is designed for reuse beyond Pseudomonas aeruginosa through the same separation of interaction, context and response evidence.
 
-The processed data, analysis outputs and analysis code are publicly available at https://github.com/ywqin829/PA-host-ppi under data/v9 and scripts/v9. The study used previously published public datasets and generated no new human or animal data. All authors have approved the manuscript, the work is not under consideration elsewhere, and the authors declare no competing interests.
+The processed data, analysis outputs and analysis code are publicly available at https://github.com/ywqin829/PA-host-ppi in release `v9.0.0`, under data/v9 and scripts/v9. The study used previously published public datasets and generated no new human or animal data. All authors have approved the manuscript, the work is not under consideration elsewhere, and the authors declare no competing interests.
 
 We would be grateful for external peer review.
 

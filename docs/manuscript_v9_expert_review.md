@@ -25,7 +25,7 @@ KEYWORDS: Pseudomonas aeruginosa; host-pathogen interaction; evidence resource; 
 
 ## DATA SUMMARY
 
-This study reanalysed eleven public P. aeruginosa infection transcriptomic resources available under GEO/SRA accessions GSE192528, GSE201465, GSE262433, GSE274823, GSE276816, GSE287469, GSE324794, GSE334176, GSE97036, SRP353174 (GSE192890) and SRP439193 (GSE233206), together with the published interaction resources cited in the text. No new human or animal data were generated. Processed tables and model outputs are provided in Supplementary Tables S1-S23, and the versioned analysis inputs, scripts and result tables are available at https://github.com/ywqin829/PA-host-ppi under data/v9 and scripts/v9. The underlying source data remain subject to the terms of their original repositories.
+This study reanalysed eleven public P. aeruginosa infection transcriptomic resources available under GEO/SRA accessions GSE192528, GSE201465, GSE262433, GSE274823, GSE276816, GSE287469, GSE324794, GSE334176, GSE97036, SRP353174 (GSE192890) and SRP439193 (GSE233206), together with the published interaction resources cited in the text. No new human or animal data were generated. Processed tables and model outputs are provided in Supplementary Tables S1-S23, and the versioned analysis inputs, scripts and result tables are available at https://github.com/ywqin829/PA-host-ppi in release `v9.0.0`, under data/v9 and scripts/v9. The underlying source data remain subject to the terms of their original repositories.
 
 ## INTRODUCTION
 
@@ -199,7 +199,7 @@ Conceptualization: J.H.X., C.Q.Y.; Methodology: J.H.X., C.Q.Y., L.Q.C.; Investig
 
 Data, Metadata, and Code Availability
 
-Processed source tables, model outputs, reproducibility scripts and audit files are available at https://github.com/ywqin829/PA-host-ppi. The repository separates the curated interaction data, analysis inputs, model outputs and figure generation code under data/v9 and scripts/v9. Public source datasets are identified by GEO/SRA accession and remain subject to the terms of their original repositories.
+Processed source tables, model outputs, reproducibility scripts and audit files are available at https://github.com/ywqin829/PA-host-ppi in release `v9.0.0`. The repository separates the curated interaction data, analysis inputs, model outputs and figure generation code under data/v9 and scripts/v9. Public source datasets are identified by GEO/SRA accession and remain subject to the terms of their original repositories.
 
 Ethics approval and consent to participate
 
