@@ -11,20 +11,21 @@ PA–human interaction set, cross-species network analyses, classifier-bias
 benchmarks, infection transcriptome reanalyses and the v9 evidence-correction
 outputs.
 
-> **Status:** v9 evidence-corrected release candidate. The analysis is
-> computationally reproducible from public inputs, but no protein-level or
+> **Status:** v9.0.0 archived analysis release. The version-matched archive is
+> available at https://doi.org/10.5281/zenodo.23667995. The analysis is
+> computationally reproducible from public inputs; no protein-level or
 > functional validation is included.
 
 ## Current version
 
-The current manuscript is:
+The submission manuscript is v11 and reports the frozen v9.0.0 analysis release:
 
-- `docs/manuscript_v9_expert_review.md`
-- `docs/Cover_Letter_v9_expert_review.md`
-- `docs/Supplemental_Material_v9.pdf`
-- `docs/Supplementary_Tables_v9.xlsx`
+- `docs/manuscript_v11_targeted_revision.md`
+- `docs/Cover_Letter_Microbial_Genomics_v11.md`
+- `docs/Supplementary_Tables_S1-S23_PA-HIR_v11.xlsx`
 
-The earlier v6 manuscript is retained only in Git history.
+The v11 identifier denotes the manuscript revision and does not define a new
+analysis dataset. Earlier manuscript files are retained for release history.
 
 ## Corrected v9 results
 
