@@ -6,9 +6,9 @@ context-aware analysis of infection transcriptomes**
 **Current release:** `v9.0.0` evidence-corrected (2026-10-26). The active analysis
 inputs and scripts are under `data/v9/` and `scripts/v9/`.
 
-**Submission authors (v11):** Feifan Xu, Zhenzhen Xia, Huihui Shi and Yongwei Qin.  
+**Resource maintainer:** Yongwei Qin.  
 **Funding:** Project Approved by the Nantong Alliance for Infectious Disease Prevention and Control (NTCRB2025013).  
-**CRediT:** Conceptualization: F.F.X.; Methodology: F.F.X., H.H.S.; Investigation: F.F.X., Z.Z.X.; Formal Analysis: Z.Z.X.; Funding acquisition: F.F.X.; Writing – original draft: F.F.X., H.H.S.; Writing – review & editing: Y.W.Q. All authors read and approved the manuscript.  
+**Resource metadata note:** The associated v11 manuscript retains its full author list and CRediT statement separately.  
 
 This repository accompanies the PA-HIR manuscript. It contains the curated
 PA–human interaction set, cross-species network analyses, classifier-bias
